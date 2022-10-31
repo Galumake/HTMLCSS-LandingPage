@@ -153,3 +153,29 @@ section {
   letter-spacing:0.2px ;
   text-transform: uppercase;
 }
+
+.profile{
+  margin-left: auto;
+}
+
+.account{
+  align-items: flex-end;
+  padding: 15px;
+  color: #364147;
+  font-size:18px ;
+}
+
+.account li{
+  font-size: 14px;
+}
+
+.profile-pic{
+  height: 60px;
+  width: 60px;
+}
+
+.profile-pic img{
+  border-radius: 100px;
+  max-width: 100%;
+}
+
