@@ -37,10 +37,7 @@ h6 {
 /***************************************/
 
 .container {
-  top: 0;
-  bottom: 0;
-  left: auto;
-  right: auto;
+  margin: 0 auto;
   max-width: 1170px;
 }
 
@@ -73,11 +70,11 @@ section {
 }
 
 .btn {
-  cursor: alias;
+  cursor: pointer;
   border: 0;
-  padding : 6px 12px 6px 12px;
+  padding : 6px 12px;
+  line-height: 1.4;
   border-radius: 3px;
-  height: 1.4;
 }
 
 .btn-default {
@@ -91,11 +88,12 @@ section {
 }
 
 .form-control {
-  padding: 6px 12px 6px 12px;
-  border: solid 1px;
-  stroke: #a0a0a0;
+  display: block;
+  padding: 6px 12px;
+  line-height: 1.4;
   color: #8598a2;
-  height: 1.4;
+  border: solid 1px #a0a0a0;
+
 }
 
 .text-light {
