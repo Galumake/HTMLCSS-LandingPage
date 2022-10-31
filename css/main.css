@@ -72,7 +72,7 @@ section {
 .btn {
   cursor: pointer;
   border: 0;
-  padding : 6px 12px;
+  padding: 6px 12px;
   line-height: 1.4;
   border-radius: 3px;
 }
@@ -93,7 +93,6 @@ section {
   line-height: 1.4;
   color: #8598a2;
   border: solid 1px #a0a0a0;
-
 }
 
 .text-light {
@@ -111,18 +110,33 @@ section {
   color: #364147;
 }
 
-.header-nav{
+.header-nav {
   border-bottom: 1px #a0a0a0;
 }
 
-.brand{
+.brand {
   width: 170px;
   height: 85px;
   margin-left: -15px;
   margin-right: 60px;
 }
 
-.logo{
+.logo {
   max-width: 100%;
   height: auto;
+}
+.search-box {
+  width: 300px;
+  height: 30px;
+  padding: 6px 12px;
+  border: 1px #a0a0a0;
+}
+
+.search-button {
+  background-color: #a0a0a0;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  padding: 0;
 }
