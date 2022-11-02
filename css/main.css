@@ -296,7 +296,7 @@ section {
 
 .full-banner-image {
   flex: 0 0 58.333333%;
-  background-image: url('../img/vista.jpg');
+  background-image: url("../img/vista.jpg");
   background-size: cover;
   background-position: top center;
   min-height: 400px;
@@ -339,7 +339,7 @@ section {
   letter-spacing: 3px;
 }
 
-.full-banner-sidebar .btn.btn-default{
+.full-banner-sidebar .btn.btn-default {
   margin-top: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -351,6 +351,7 @@ section {
 /***************FOOTER*******************/
 
 footer {
+  display: flex;
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
@@ -358,7 +359,8 @@ footer {
   background-color: black;
 }
 
-footer::after{
+footer:after {
+  content: "";
   background-color: #a0a0a0;
   width: 75%;
   position: absolute;
@@ -369,32 +371,35 @@ footer::after{
   z-index: -1;
 }
 
-.list{
+
+footer a:hover {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 0 4px;
+  text-decoration: underline;
+}
+
+.lists {
   flex: 0 0 75%;
   gap: 30px 15px;
   padding: 40px 0 40px;
 }
 
-.link-header{
+.link-header {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-footer a{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 0 0 4px  ;
-  text-decoration: underline;
-}
 
-.social ul li{
+
+.social ul li {
   display: inline-block;
 }
 
-.social ul li a{
+.social ul li a {
   display: block;
   width: 23px;
   height: 23px;
@@ -402,79 +407,75 @@ footer a{
   background-position: center;
 }
 
-.twitter{
-  background-image: url('../img/twitter.svg');
+.twitter {
+  background-image: url("../img/twitter.svg");
 }
 
-.facebook{
-  background-image: url('../img/facebook.svg');
+.facebook {
+  background-image: url("../img/facebook.svg");
 }
 
-.instagram{
-  background-image: url('../img/instagram.svg');
+.instagram {
+  background-image: url("../img/instagram.svg");
 }
 
-.pinterest{
-  background-image: url('../img/pinterest.svg');
+.pinterest {
+  background-image: url("../img/pinterest.svg");
 }
 
-.newsletter .link-header{
+.newsletter .link-header {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.newsletter .link-subheader{
+.newsletter .link-subheader {
   font-style: italic;
   font-size: 12px;
-  font-weight: 4000;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
-.newsletter input{
+.newsletter input {
   border: 1px solid #364147;
   width: 200px;
   margin-bottom: 10px;
 }
 
-.newsletter button{
+.newsletter button {
   width: 150px;
   min-width: auto;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.ps{
+.ps {
   flex: 0 0 25%;
-  padding:40px 0;
+  padding: 40px 0;
   color: #e5e5e5;
   font-size: 16px;
 }
 
-.ps logo{
+.ps img {
   max-width: 230px;
 }
 
-.demo{
+.demo {
   padding: 0 30px;
 }
 
-.demo::before{
+.demo:before {
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   margin: 30px 0;
-  background: linear-gradient(right, #f05a28 0 , #e80089 100%);
+  background: linear-gradient(right, #f05a28 0, #e80089 100%);
 }
 
-.copyright{
+.copyright {
   flex: 0 0 75%;
   padding: 10px 0;
   font-size: 12px;
   text-align: center;
 }
-
-
-
-
